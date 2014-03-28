@@ -72,9 +72,9 @@ version 2 without this exception.  You may, if you choose, apply this exception 
 	<div id="svCalendar" class="mura-calendar #this.calendarListWrapperClass#">
 		<table>
 			<tr>
-				<th id="previousMonth"><a href="?month=#previousmonth#&year=#previousyear#&categoryID=#URLEncodedFormat($.event('categoryID'))#&relatedID=#URLEncodedFormat(request.relatedID)#&keywords=#URLEncodedFormat($.event('keywords'))#&filterBy=releaseMonth">&laquo;</a></th>
+				<th id="previousMonth"><a href="#variables.$.createHREF(event.getContentBean().getValue('type'),event.getContentBean().getValue('filename'),event.getContentBean().getValue('siteID'),event.getContentBean().getValue('contentID'),event.getContentBean().getValue('target'),event.getContentBean().getValue('targetparams'),'',variables.$.globalConfig('context'),variables.$.globalConfig('stub'),variables.$.globalConfig('indexFile'),false,'')#date/#previousyear#/#previousmonth#/?month=#previousmonth#&year=#previousyear#&categoryID=#URLEncodedFormat($.event('categoryID'))#&relatedID=#URLEncodedFormat(request.relatedID)#&keywords=#URLEncodedFormat($.event('keywords'))#&filterBy=releaseMonth">&laquo;</a></th>
 				<th>#dateLong#</th>
-				<th id="nextMonth"><a href="?month=#nextmonth#&year=#nextyear#&categoryID=#URLEncodedFormat($.event('categoryID'))#&relatedID=#URLEncodedFormat(request.relatedID)#&keywords=#URLEncodedFormat($.event('keywords'))#&filterBy=releaseMonth">&raquo;</a></th>
+				<th id="nextMonth"><a href="#variables.$.createHREF(event.getContentBean().getValue('type'),event.getContentBean().getValue('filename'),event.getContentBean().getValue('siteID'),event.getContentBean().getValue('contentID'),event.getContentBean().getValue('target'),event.getContentBean().getValue('targetparams'),'',variables.$.globalConfig('context'),variables.$.globalConfig('stub'),variables.$.globalConfig('indexFile'),false,'')#date/#nextyear#/#nextmonth#/?month=#nextmonth#&year=#nextyear#&categoryID=#URLEncodedFormat($.event('categoryID'))#&relatedID=#URLEncodedFormat(request.relatedID)#&keywords=#URLEncodedFormat($.event('keywords'))#&filterBy=releaseMonth">&raquo;</a></th>
 			</tr>
 		</table>
 	</div>
